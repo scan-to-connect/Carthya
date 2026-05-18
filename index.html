@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CARTHYA | Handcrafted Mediterranean Pottery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --terracotta: #C56A4A;
+      --sand: #DCC6AD;
+      --ivory: #F3EDE3;
+      --olive: #6E6F4E;
+      --blue: #35505B;
+      --charcoal: #2A2A2A;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: var(--ivory);
+      color: var(--charcoal);
+      font-family: 'Inter', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      background-image:
+        radial-gradient(circle at top left, rgba(197,106,74,0.08), transparent 30%),
+        radial-gradient(circle at bottom right, rgba(53,80,91,0.08), transparent 30%);
+    }
+
+    .card {
+      width: 100%;
+      max-width: 460px;
+      background: rgba(255,255,255,0.65);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(0,0,0,0.06);
+      border-radius: 28px;
+      padding: 42px 32px;
+      text-align: center;
+      box-shadow: 0 12px 40px rgba(0,0,0,0.08);
+    }
+
+    .logo-container {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 18px;
+    }
+
+    .brand-logo {
+      width: 130px;
+      height: 130px;
+      object-fit: contain;
+      border-radius: 28px;
+      border: 1px solid rgba(0,0,0,0.08);
+      padding: 10px;
+      background: rgba(255,255,255,0.75);
+      box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+    }
+
+    .logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 3.4rem;
+      letter-spacing: 0.18em;
+      margin-bottom: 12px;
+      color: var(--charcoal);
+    }
+
+    .tagline {
+      color: var(--olive);
+      font-size: 0.95rem;
+      line-height: 1.7;
+      margin-bottom: 32px;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    .icon-link {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      color: var(--charcoal);
+      border: 1px solid rgba(197,106,74,0.35);
+      background: rgba(255,255,255,0.72);
+      transition: all 0.25s ease;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+    }
+
+    .icon-link:hover {
+      transform: translateY(-4px) scale(1.04);
+      background: var(--terracotta);
+      color: white;
+      box-shadow: 0 12px 28px rgba(197,106,74,0.25);
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .link {
+      text-decoration: none;
+      color: var(--charcoal);
+      border: 1px solid rgba(0,0,0,0.08);
+      background: rgba(255,255,255,0.8);
+      padding: 16px 18px;
+      border-radius: 16px;
+      transition: all 0.25s ease;
+      font-weight: 500;
+    }
+
+    .link:hover {
+      transform: translateY(-2px);
+      background: var(--terracotta);
+      color: white;
+      border-color: var(--terracotta);
+      box-shadow: 0 10px 20px rgba(197,106,74,0.22);
+    }
+
+    .footer {
+      margin-top: 34px;
+      font-size: 0.8rem;
+      color: rgba(0,0,0,0.55);
+      letter-spacing: 0.06em;
+    }
+
+    @media (max-width: 480px) {
+      .logo {
+        font-size: 2.8rem;
+      }
+
+      .card {
+        padding: 34px 22px;
+      }
+    }
+    .social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 22px;
+  margin-top: 12px;
+  flex-wrap: wrap;
+}
+
+.social-links a {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(255,255,255,0.72);
+
+  border: 1px solid rgba(197,106,74,0.35);
+
+  box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+
+  transition: all 0.25s ease;
+}
+
+.social-links a:hover {
+  transform: translateY(-4px) scale(1.05);
+
+  box-shadow: 0 12px 28px rgba(197,106,74,0.25);
+
+  background: rgba(197,106,74,0.12);
+}
+
+.social-links img {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+}
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="logo-container">
+      <img class="brand-logo" src="carth_p.png" alt="CARTHYA Logo">
+    </div>
+
+    <div class="logo">CARTHYA</div>
+
+    <div class="tagline">
+      🏺 Handcrafted Mediterranean pottery<br>
+      🌊 Inspired by earth, sea & the heritage of Carthage<br>
+      🇹🇳 Made in Tunisia
+    </div>
+
+    <div class="social-links">
+  <a href="https://www.facebook.com/share/17L8Z2Kak3/" target="_blank">
+    <img src="facebook.svg" alt="Facebook">
+  </a>
+
+  <a href="https://www.instagram.com/saveu_rr" target="_blank">
+    <img src="instagram.svg" alt="Instagram">
+  </a>
+
+  <a href="https://www.tiktok.com/@saveur240" target="_blank">
+    <img src="tiktok.svg" alt="Tiktok">
+  </a>
+
+  <a href="https://wa.me/21657131890" target="_blank">
+    <img src="Whatsapp.svg" alt="Whatsapp">
+  </a>
+
+  <a href="mailto:saveur028@gmail.com">
+    <img src="email.svg" alt="Email">
+  </a>
+</div>
+
+    <div class="footer">
+      CARTHYA • Mediterranean Ceramics
+    </div>
+  </div>
+</body>
+</html>
